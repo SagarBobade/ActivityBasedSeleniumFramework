@@ -1,0 +1,31 @@
+
+Used in this project -
+NgWebdriver
+Screenshot
+Exception handeling
+TestNg
+
+###################### For new script, do following steps ######################
+
+Step 1 = Create a testNG class.
+Step 2 = Create a class with the name of your activity in an "activity" package -
+Step 3 = In activity class : 
+		 3.1 Create a method with the name of your activity with prefix "do"
+			 Pass webdriver's object to it.
+		 3.2 Create object/objects of page/pages(which contains constructor and findby... methods) of which our script is going to execute
+				(before this, create the class with the name of page-name in package : "pages".
+				 this class will contain the findByXpathAndClick, findByNameAndClick methods and parameterized constructor of that class
+				 pass reference of "webdriver" class as parameter) 
+		 3.3 Do scenario of clicking, sendkeys.. etc etc, by using object/objects created in above step
+				Create separate methods in activity class by clubbing chunks of code which will be usefull for "doActivity" method id activity class
+Step 4 = Use try catch for the object/objects creation and for scenario separately.
+Step 5 = After scenario, write below syntax for Log and Screenshot :-
+				Common.WriteToFile();
+Step 6 = In SeleniumTLS.xml, make entry of our new testNG class for the execution.
+Step 7 = Make sure the syntax for concurrent or sequential running of all testNG classes.
+				
+				
+		add try catch for all methods
+##################################################################################
+				
+				

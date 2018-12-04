@@ -1,7 +1,6 @@
-# Simple
+# Simple & Maintainable
   This is  Basic Selenium framework version 2 using java which is activity based, well structured and maintainable.
-
-# Maintainable
+  
 # Version 2 - 
   Used TestNg
   Used NgWebdriver library
